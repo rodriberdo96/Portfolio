@@ -45,3 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error!', error.message))
     })
 })
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+       pageLanguage: 'en', layout: 
+       google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: 
+       false, includedLanguages: 'fr,de,es,en', gaTrack: true, gaId: 'AIzaSyDXfXePTSGe_Kdi-epMgmjjrphscuZPycc'
+       }, 'google_translate_element');
+ }

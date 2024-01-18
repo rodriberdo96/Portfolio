@@ -330,6 +330,12 @@ form .btn2{
     font-weight: 200;
     margin-top: 20px;
 }
+
+#google_translate_element{
+    text-align: end;
+    margin-top: -20px;
+}
+
 /*-------------------responsive------------------*/
 nav .fa-solid{
     display: none;

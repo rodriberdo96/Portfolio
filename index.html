@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>My Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/1348965c05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Heading.png" alt="foto logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I´m <span>Rodri</span> <br>from Argentina</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/fotoperfil-removebg-preview.png" alt="yo">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis laboriosam neque tempore veniam corporis doloremque. Dolores magni dolorum eligendi, quisquam quas amet modi quos deserunt, dignissimos, fugiat ducimus aperiam veniam.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', this)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UX/UI</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2023</span><br>Full Stack Web Development at Coderhouse</li>
+                            <li><span>2023-Current</span><br>Software Development at UADE</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Ecommerce</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Ecommerce</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Ecommerce</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------contact------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rodriberdomas@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +541134450448</p>
+                    <div class="social-icons">
+                        <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/rodriberdo96" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rodrigoberdomas/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/_Rodrigo Berdomas CV English (2).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>  
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright C Rodri Berdomas </p>
+        </div>
+    </div>
+</body>
+</html>
